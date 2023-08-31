@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Finland';
+  src: url('assets/Fonts/Finland.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 150px;
+  font-family: Finland;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-link {
+  color: black;
+  text-decoration: none;
+  margin: 0 40px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lead-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.lead {
+  width: 500px;
+}
+
+.lead-cta {
+  text-align: center;
+}
+
+
+  
