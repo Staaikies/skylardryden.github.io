@@ -13,25 +13,42 @@ body {
     background-color: #f17f3e;
 }
 
-main {
-    width: 100vw;
+.landing {
+    width: 100%;
     height: 100vh;
     padding-top: 20vh;
     background-color: #252525;
     border: 1rem solid #f17f3e;
 }
 
-header {
+.header {
     max-width: 300px;
     margin: auto;
 }
 
-h1 {
+.heading {
     display: block;
+}
+
+.heading--main {
     font-size: 8rem;
     margin-bottom: 2rem;
 }
 
-span {
+.heading-pretitle,
+.heading-subtitle {
     font-size: 2rem;
+}
+
+/* Small screen */
+@media only screen and (max-width: 360px) {
+	.heading--main {
+        font-size: 7rem;
+    }
+}
+/* Tiny screen */
+@media only screen and (max-width:300px) {
+    .heading--main {
+        font-size: 6rem;
+    }
 }
