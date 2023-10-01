@@ -21,12 +21,8 @@ body {
     border: 1rem solid #f17f3e;
 }
 
-.meta-info {
-
-    
-}
-
 .meta-info__item {
+    display: inline-block;
     color: white;
     font-size: 1.8rem;
 }
@@ -38,8 +34,15 @@ body {
     margin-right: 1rem;
 }
 
-.heading-landing-container {
+.landing-banner {
+    display: flex;
     padding-top: 15vh;
+}
+.landing-banner__photo {
+    width: auto;
+    height: 30rem;
+    border: 1rem solid;
+    border-radius: 100%;
 }
 
 .heading {
@@ -47,8 +50,9 @@ body {
 }
 
 .heading--main {
-    font-size: 30rem;
+    font-size: 34rem;
     margin-bottom: 2rem;
+    padding: 0 5rem;
 }
 
 .heading-pretitle,
