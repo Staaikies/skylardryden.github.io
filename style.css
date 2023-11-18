@@ -21,18 +21,19 @@ html {
         border: 1rem solid #f17f3e;
     }
 
+    .meta-info {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
     .meta-info__item {
         display: inline-block;
         color: white;
-        font-size: 1.8rem;
-        line-height: 1.4;
+        font-size: 1.5rem;
+        line-height: 1.5;
     }
-    .meta-into__item--dot {
-        margin-top: 0.2rem;
-    }
-
-    .meta-info__item:not(:last-child) {
-        margin-right: 1rem;
+    .meta-info__item--dot {
+        margin: 0 0.5rem;
     }
 
     .landing-banner {
@@ -53,13 +54,11 @@ html {
     .heading {
         display: block;
     }
-
     .heading--main {
         font-size: 8rem;
         text-align: center;
         order: 2;
     }
-
     .heading--second-main {
         font-size: 2rem;
         text-align: center;
