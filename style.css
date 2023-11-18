@@ -12,19 +12,27 @@ html {
 
 /*==  Tiny Screen / Base Styling ==*/
 @media only screen and (min-width: 0) {
-    .landing {
-        width: 100%;
-        height: 100vh;
-        padding: 1.8rem;
-        background-color: #252525;
-        border: .7rem solid #f17f3e;
-    }
-    /* 
+    /*
     This is the secret sauce for the page to fit the screen on desktop:
         height: auto;
         min-height: 100vh;
     */
     
+    .section {
+        width: 100%;
+        height: 100vh;
+        padding: 1.8rem;
+        /* The magic that keeps the borders fitting the screen edges on section scrolls. */
+        margin-bottom: -.7rem;
+    }
+    .section--bordered {
+        background-color: #252525;
+        border: .7rem solid #f17f3e;
+        border-bottom: 0;
+    }
+    .section--bordered:last-of-type {
+        border-bottom: .7rem solid #f17f3e;
+    }
 
     .meta-info {
         display: block;
