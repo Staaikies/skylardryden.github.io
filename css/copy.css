@@ -1,0 +1,28 @@
+/*==  Tiny Screen  ==*/
+@media only screen and (min-width: 0) {
+    .heading {
+        display: block;
+    }
+    .heading--main {
+        font-size: 8rem;
+        line-height: 1;
+        text-align: center;
+        order: 2;
+    }
+    .heading--second-main {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .heading-pretitle,
+    .heading-subtitle {
+        font-size: 2rem;
+    }
+}
+
+/*==  Medium Screen  ==*/
+@media only screen and (min-width: 640px) {
+	.heading--main {
+        font-size: 12rem;
+    }
+}

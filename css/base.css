@@ -1,0 +1,11 @@
+/*==  BASE STYLES  ==*/
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f17f3e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
