@@ -11,12 +11,13 @@
     margin: 0 auto;
     padding: 0 1rem 1rem 1rem;
 }
-.accolade__heading-wrapper--who {
+.accolade--who .accolade__heading-wrapper {
     border-right: .7rem solid #f17f3e;
     border-bottom: .7rem solid #f17f3e;
 }
-.accolade__heading-wrapper--do {
+.accolade--do .accolade__heading-wrapper {
     align-self: center;
+    text-align: right;
     border-left: .7rem solid #f17f3e;
     border-bottom: .7rem solid #f17f3e;
 }
@@ -25,14 +26,22 @@
     font-size: 6rem;
 }
 
-.accolade__paragraph-wrapper {
+.accolade__content-wrapper {
     display: block;
     position: relative;
     min-width: 18rem;
     max-width: 20rem;
     margin: 0 auto 1.5rem auto;
     padding: 1rem;
+}
+
+.accolade--who .accolade__content-wrapper {
+    padding-right: 0;
     border-left: .7rem solid #f17f3e;
+}
+.accolade--do .accolade__content-wrapper {
+    padding-left: 0;
+    border-right: .7rem solid #f17f3e;
 }
 
 .accolade__paragraph {
