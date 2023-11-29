@@ -1,50 +1,71 @@
-.accolade {
-    max-width: 22rem;
-    margin: 0 auto;
-}
+/*==  Tiny Screen  ==*/
+@media only screen and (min-width: 0) {
+    .accolade {
+        width: 100%;
+        max-width: 22rem;
+        margin: 0 auto;
+    }
 
-.accolade__heading-wrapper {
-    display: block;
-    position: relative;
-    min-width: 18rem;
-    max-width: 20rem;
-    margin: 0 auto;
-    padding: 0 1rem 1rem 1rem;
-}
-.accolade--who .accolade__heading-wrapper {
-    border-right: .7rem solid #f17f3e;
-    border-bottom: .7rem solid #f17f3e;
-}
-.accolade--do .accolade__heading-wrapper {
-    align-self: center;
-    text-align: right;
-    border-left: .7rem solid #f17f3e;
-    border-bottom: .7rem solid #f17f3e;
-}
+    .accolade__heading-wrapper {
+        display: block;
+        position: relative;
+        min-width: 18rem;
+        max-width: 20rem;
+        margin: 0 auto;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .accolade--am .accolade__heading-wrapper {
+        border-right: .7rem solid #f17f3e;
+        border-bottom: .7rem solid #f17f3e;
+    }
+    .accolade--do .accolade__heading-wrapper {
+        align-self: center;
+        text-align: right;
+        border-left: .7rem solid #f17f3e;
+        border-bottom: .7rem solid #f17f3e;
+    }
+    .accolade--done .accolade__heading-wrapper {
+        border-right: .7rem solid #f17f3e;
+        border-top: .7rem solid #f17f3e;
+    }
+    .accolade--you .accolade__heading-wrapper {
+        text-align: center;
+        border: .7rem solid #f17f3e;
+        border-bottom: none;
+    }
 
-.accolade__heading {
-    font-size: 6rem;
-}
+    .accolade__heading {
+        font-size: 6rem;
+    }
 
-.accolade__content-wrapper {
-    display: block;
-    position: relative;
-    min-width: 18rem;
-    max-width: 20rem;
-    margin: 0 auto 1.5rem auto;
-    padding: 1rem;
-}
+    .accolade__content-wrapper {
+        display: block;
+        position: relative;
+        min-width: 18rem;
+        max-width: 20rem;
+        margin: 0 auto 1.5rem auto;
+        padding: 1rem;
+    }
 
-.accolade--who .accolade__content-wrapper {
-    padding-right: 0;
-    border-left: .7rem solid #f17f3e;
-}
-.accolade--do .accolade__content-wrapper {
-    padding-left: 0;
-    border-right: .7rem solid #f17f3e;
-}
+    .accolade--am .accolade__content-wrapper {
+        padding-right: 0;
+        border-left: .7rem solid #f17f3e;
+    }
+    .accolade--do .accolade__content-wrapper {
+        padding-left: 0;
+        border-right: .7rem solid #f17f3e;
+    }
+    .accolade--done .accolade__content-wrapper {
+        border-left: .7rem solid #f17f3e;
+        border-bottom: .7rem solid #f17f3e;
+    }
+    .accolade--you .accolade__content-wrapper {
+        border: .7rem solid #f17f3e;
+        border-top: none;
+    }
 
-.accolade__paragraph {
-    font-size: 1.8rem;
-    line-height: 1.2;
+    .accolade__paragraph {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
 }
