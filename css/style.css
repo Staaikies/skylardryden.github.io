@@ -1,7 +1,9 @@
 @import url('base.css');
+@import url('utility.css');
 @import url('structure.css');
 @import url('copy.css');
 @import url('landing.css');
+@import url('footer.css');
 @import url('accolades.css');
 @import url('components.css');
 @import url('forms.css');
