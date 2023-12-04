@@ -9,11 +9,19 @@
     .meta-info__item {
         display: inline-block;
         color: white;
-        font-size: 1.6rem;
+        font-size: 1.666rem; /* \m/ */
         line-height: 1.5;
     }
     .meta-info__item--dot {
         margin: 0 0.5rem;
+    }
+    .meta-info__link {
+        color: white;
+        text-decoration: underline;
+    }
+    .meta-info__link:hover,
+    .meta-info__link:active {
+        color: #f17f3e;
     }
 
     .heading {

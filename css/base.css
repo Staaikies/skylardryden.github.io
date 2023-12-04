@@ -1,6 +1,7 @@
 /*==  BASE STYLES  ==*/
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
