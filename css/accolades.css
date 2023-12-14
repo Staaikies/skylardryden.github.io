@@ -10,9 +10,9 @@
         display: block;
         position: relative;
         min-width: 18rem;
-        max-width: 20rem;
         margin: 0 auto;
-        padding: 0 1rem 1rem 1rem;
+        /* padding: 0 1rem 1rem 1rem; */
+        padding-bottom: 1rem;
     }
     .accolade--am .accolade__heading-wrapper {
         border-right: .7rem solid #f17f3e;
@@ -43,7 +43,6 @@
         display: block;
         position: relative;
         min-width: 18rem;
-        max-width: 20rem;
         margin: 0 auto;
         padding: 1rem;
     }
@@ -69,5 +68,16 @@
     .accolade__paragraph {
         font-size: 1.8rem;
         line-height: 1.2;
+    }
+}
+
+/*==  Tiny Screen  ==*/
+@media only screen and (min-width: 400px) {
+    .accolade {
+        max-width: 28rem;
+    }
+
+    .accolade__heading {
+        font-size: 7rem;
     }
 }

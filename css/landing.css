@@ -17,3 +17,10 @@
         order: 1;
     }
 }
+
+/*==  Small Screen  ==*/
+@media only screen and (min-width: 400px) {
+    .landing-banner__photo {
+        max-width: 28rem;
+    }
+}
