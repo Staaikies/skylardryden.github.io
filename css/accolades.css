@@ -2,7 +2,7 @@
 @media only screen and (min-width: 0) {
     .accolade {
         width: 100%;
-        max-width: 22rem;
+        max-width: 26rem;
         margin: 0 auto;
     }
 
@@ -15,16 +15,19 @@
         padding-bottom: 1rem;
     }
     .accolade--am .accolade__heading-wrapper {
+        padding-left: 1rem;
         border-right: .7rem solid #f17f3e;
         border-bottom: .7rem solid #f17f3e;
     }
     .accolade--do .accolade__heading-wrapper {
         align-self: center;
         text-align: right;
+        padding-right: 1rem;
         border-left: .7rem solid #f17f3e;
         border-bottom: .7rem solid #f17f3e;
     }
     .accolade--done .accolade__heading-wrapper {
+        padding-left: 1rem;
         border-right: .7rem solid #f17f3e;
         border-top: .7rem solid #f17f3e;
     }
@@ -36,7 +39,7 @@
     }
 
     .accolade__heading {
-        font-size: 5rem;
+        font-size: 5.5rem;
     }
 
     .accolade__content-wrapper {
