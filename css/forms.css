@@ -1,5 +1,9 @@
 /*==  Tiny Screen  ==*/
 @media only screen and (min-width: 0) {
+    .form-contact {
+        max-width: 26rem;
+        margin: 0 auto; 
+    }
     .form-field {
         margin-bottom: 1rem;
     }
@@ -16,16 +20,39 @@
 
     .form-input {
         width: 100%;
+        padding: 1rem;
+        background-color: #303030;
+        border: none;
+        border-radius: .2rem;
+    }
+    .form-input:focus,
+    .form-input:focus-visible {
+        border: none;
+        outline: none;
+        background-color: #505050;
+        transition: .3s all ease;
     }
 
     .form-textarea {
         width: 100%;
         min-height: 6rem;
+        padding: 1rem;
+        background-color: #303030;
+        border: none;
+        border-radius: .2rem;
+        transition: .3s all ease;
+    }
+    .form-textarea:focus,
+    .form-textarea:focus-visible {
+        border: none;
+        outline: none;
+        background-color: #505050;
     }
 
     .form-button {
         text-align: left;
         width: 100%;
         margin-top: 1rem;
+        height: 6rem;
     }
 }

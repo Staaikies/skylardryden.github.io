@@ -1,5 +1,32 @@
 /*==  Tiny Screen  ==*/
 @media only screen and (min-width: 0) {
+    .button {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 0;
+        padding: 1.8rem;
+    }
+
+    .button--primary {
+        color: #f17f3e;
+        background-color: #252525; 
+        border: .3rem solid #f17f3e;
+        transition: .3s all ease;
+    }
+    .button--primary:hover {
+        color: #252525;
+        background-color: #f17f3e;
+    }
+    .button__secret {
+        opacity: 0;
+        color: #252525;
+        text-align: right;
+        float: right;
+        transition: .3s all ease;
+    }
+    .button:hover .button__secret {
+        opacity: 1;
+    }
     .card-component {
         display: flex;
         padding: 1rem;

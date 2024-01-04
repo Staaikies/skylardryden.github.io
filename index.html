@@ -57,9 +57,15 @@
                         <h2 class="accolade__heading">what<br aria-hidden="true"> I've<br aria-hidden="true"> done</h2>
                     </div>
                     <div class="accolade__content-wrapper">
-                        <p class="accolade__paragraph">TeachMe2</p>
-                        <p class="accolade__paragraph">Yuppiechef</p>
-                        <p class="accolade__paragraph">GitHub Projects</p>
+                        <!-- TODO: These class names can be better. -->
+                        <h3 class="accolade__done-header">
+                            <a href="#" class="accolade__done-header--link  accolade__done-header--link-active">
+                                Yuppiechef
+                                <p class="accolade__done-header--description">Frontend Developer for 4 years</p>
+                            </a>
+                        </h3>
+                        <h3 class="accolade__done-header"><a href="#" class="accolade__done-header--link">Teach Me 2</a></h3>
+                        <h3 class="accolade__done-header"><a href="#" class="accolade__done-header--link">GitHub Projects</a></h3>
                     </div>
                 </div>
             </section>
@@ -67,7 +73,7 @@
             <section class="section  section--bordered-top  section--flex-centered">
                 <div class="accolade accolade--you">
                     <div class="accolade__heading-wrapper">
-                        <h2 class="accolade__heading">who<br aria-hidden="true"> are<br aria-hidden="true"> you?</h2>
+                        <h2 class="accolade__heading">who are<br aria-hidden="true"> you?</h2>
                     </div>
                     <div class="accolade__content-wrapper">
                         <form class="form">
@@ -75,18 +81,16 @@
                                 <label class="form-label">name:</label>
                                 <input type="text" class="form-input"/>
                             </div>
-                            
                             <div class="form-field">
                                 <label class="form-label">email:</label>
                                 <input type="email" class="form-input"/>
                             </div>
-                            
                             <div class="form-field">
                                 <label class="form-label">message:</label>
                                 <textarea class="form-textarea"></textarea>
                             </div>
                             <div class="form-control">
-                                <button class="button button--primary form-button">contact me</button>
+                                <button class="button button--primary form-button">contact me <span class="button__secret">chat soon</span></button>
                             </div>
                         </form>
                     </div>
