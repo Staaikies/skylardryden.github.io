@@ -72,18 +72,39 @@
 
     /* ==== CONTENT SPECIFIC ==== */
     .accolade__paragraph {
+        color: inherit;
         font-size: 1.8rem;
         line-height: 1.2;
     }
-    .accolade__done-header {
-        font-size: 2.5rem;
+    .accolade__done-header-wrapper {
         border: .3rem solid #f17f3e;
         margin-bottom: 1rem;
-        padding: 1rem;
-
+        padding: 1.2rem;
+    }
+    .accolade__done-header-wrapper:hover {
+        cursor: pointer;
+        color: #252525;
+        background-color: #f17f3e;
+        transition: .3s all ease;
+    }
+    .accolade__done-header-wrapper.accolade__done-header-wrapper--open {
+        color: #252525;
+        background-color: #f17f3e;
+    }
+    .accolade__done-header {
+        color: inherit;
+        font-size: 2.2rem;
+        text-decoration: underline;
+        
+    }
+    .accolade__done-header.accolade__done-header--open {
+        color: #252525;
+        background-color: #f17f3e;
     }
     .accolade__done-header--description {
+        color: inherit;
         font-size: 1.2rem;
+        text-decoration: none;
     }
 }
 
