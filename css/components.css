@@ -13,10 +13,12 @@
         border: .3rem solid #f17f3e;
         transition: .3s all ease;
     }
+    
     .button--primary:hover {
         color: #252525;
         background-color: #f17f3e;
     }
+
     .button__secret {
         opacity: 0;
         color: #252525;
@@ -24,22 +26,39 @@
         float: right;
         transition: .3s all ease;
     }
+
     .button:hover .button__secret {
         opacity: 1;
     }
+
     .card-component {
-        display: flex;
-        padding: 1rem;
+        padding: 1.2rem;
         background-color: white;
         border-radius: .6rem;
     }
 
+    .card-component__copy {
+        flex-grow: 1;
+    }
+
+    .card-component__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
     .card-component__heading {
         color: #333;
+        font-size: 1.6rem;
+    }
+
+    .card-component__subtext {
+        font-size: 1.4rem;
     }
 
     .card-component__image {
-        max-width: 6rem;
+        max-width: 5rem;
+        height: fit-content;
         border-radius: 100%;
     }
 }
