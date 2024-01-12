@@ -1,0 +1,62 @@
+/*==  Tiny Screen  ==*/
+@media only screen and (min-width: 0) {
+    .done-card {
+        color: #f17f3e;
+        border: .3rem solid #f17f3e;
+        margin-bottom: 1rem;
+        padding: 1.4rem 1.2rem;
+    }
+    .done-card:hover {
+        cursor: pointer;
+        color: #252525;
+        background-color: #f17f3e;
+        transition: .3s all ease;
+    }
+   .done-card:hover .done-card__header-wrapper .done-card__icon {
+        border-left: .9rem solid #252525;
+   }
+
+    .done-card__header-wrapper {
+        color: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .done-card__header {
+        color: inherit;
+        font-size: 2.2rem;
+    }
+
+    .done-card__header-link {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    .done-card__icon {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-right: .6rem;
+        border-top: .9rem solid transparent;
+        border-bottom: .9rem solid transparent;
+        border-left: .9rem solid #f17f3e;
+        transition: .2s ease all;
+    }
+
+    .done-card--open .done-card__icon {
+        rotate: 90deg;
+    }
+
+    .done-card__description {
+        display: none;
+        color: inherit;
+        font-size: 1.4rem;
+        text-decoration: none;
+        margin-top: 1rem;
+    }
+
+    .done-card--open .done-card__description {
+        display: flex;
+    }
+}
