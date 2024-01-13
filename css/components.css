@@ -34,6 +34,7 @@
     /* ==== CARD COMPONENT ==== */
     .card-component {
         position: relative;
+        margin-bottom: 2rem;
         padding: 1.4rem;
         background-color: #f3f3f3;
         border-radius: .6rem;
@@ -70,8 +71,56 @@
     }
 
     .card-component__image {
-        max-width: 5.4rem;
+        max-width: 5.2rem;
         height: fit-content;
         border-radius: 100%;
     }
+
+    /* ==== CARD CONTROL PANEL ==== */
+    .card-component-controls {
+        width: 100%;
+        background-color: #303030;
+        padding: 1rem;
+        border-radius: .4rem;
+    }
+
+    .card-component-controls__description {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-component-controls__swatches-wrapper {
+        display: flex;
+            justify-content: space-around;
+        width: 100%;
+    }
+
+    .card-component-controls__swatch {
+        width: 4rem;
+        height: 4rem; 
+        border: .1rem solid #f3f3f3; 
+        border-radius: 100%;
+    }
+
+    .card-component-controls__swatch--orange {
+        background-color: #f17f3e;
+    }
+    .card-component-controls__swatch--blue {
+        background-color: lightblue;
+    }
+    .card-component-controls__swatch--purple {
+        background-color: purple;
+    }
+    .card-component-controls__swatch--white {
+        background-color: #ddd;
+    }
+
+
+
+
+
+
+
+
+
 }
