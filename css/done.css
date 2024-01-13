@@ -41,7 +41,7 @@
         border-top: .9rem solid transparent;
         border-bottom: .9rem solid transparent;
         border-left: .9rem solid #f17f3e;
-        transition: .2s ease all;
+        transition: .2s ease rotate;
     }
 
     .done-card--open .done-card__icon {
@@ -49,14 +49,17 @@
     }
 
     .done-card__description {
-        display: none;
+        max-height: 0;
         color: inherit;
         font-size: 1.4rem;
         text-decoration: none;
-        margin-top: 1rem;
+        overflow: hidden;
+        transition: max-height .3s ease;
     }
 
     .done-card--open .done-card__description {
-        display: flex;
+        display: block;
+        max-height: 10rem;
+        margin-top: 1rem;
     }
 }
