@@ -13,6 +13,7 @@
         padding: 1.8rem 0;
         /* The magic that keeps the borders fitting the screen edges on section scrolls. */
         margin-bottom: -.7rem;
+        scroll-snap-align: start;
     }
     .section--flex-centered {
         display: flex;
