@@ -37,7 +37,8 @@
 /*== Landscape Tablets / Small Desktop Browser Window ==*/
 @media only screen and (min-width: 768px) {
     .landing-banner {
-        max-width: none;
+        justify-content: space-around;
+        max-width: 62rem;
     }
     .landing-banner__photo {
         max-width: 28rem;

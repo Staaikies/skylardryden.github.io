@@ -81,11 +81,12 @@
         width: 100%;
         background-color: #303030;
         padding: 1rem;
-        border-radius: .4rem;
+        border-radius: .6rem;
     }
 
     .card-component-controls__description {
         font-size: 1.2rem;
+        font-weight: 600;
         margin-bottom: 1rem;
     }
 
@@ -114,13 +115,4 @@
     .card-component-controls__swatch--white {
         background-color: #ddd;
     }
-
-
-
-
-
-
-
-
-
 }
