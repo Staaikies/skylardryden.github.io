@@ -38,7 +38,7 @@
 @media only screen and (min-width: 768px) {
     .landing-banner {
         justify-content: space-around;
-        max-width: 62rem;
+        max-width: 66rem;
     }
     .landing-banner__photo {
         max-width: 28rem;

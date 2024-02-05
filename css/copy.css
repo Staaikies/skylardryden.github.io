@@ -96,4 +96,8 @@
     .heading--main {
         font-size: 14rem;
     }
+
+    .heading--second-main {
+        font-size: 4rem;
+    }
 }

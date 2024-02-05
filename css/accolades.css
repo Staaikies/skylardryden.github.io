@@ -89,3 +89,13 @@
         font-size: 7rem;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .accolade {
+        max-width: 44rem;
+    }
+
+    .accolade__heading {
+        font-size: 10rem;
+    }
+}
