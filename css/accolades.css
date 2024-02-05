@@ -2,78 +2,77 @@
 @media only screen and (min-width: 0) {
     .accolade {
         width: 100%;
-        max-width: 26rem;
+        max-width: 16.25rem;
         margin: 0 auto;
     }
 
     .accolade__heading-wrapper {
         display: block;
         position: relative;
-        min-width: 18rem;
+        min-width: 11.25rem;
         margin: 0 auto;
-        /* padding: 0 1rem 1rem 1rem; */
-        padding-bottom: 1rem;
+        padding-bottom: 0.625rem;
     }
     .accolade--am .accolade__heading-wrapper {
-        padding-left: 1rem;
-        border-right: .7rem solid #f17f3e;
-        border-bottom: .7rem solid #f17f3e;
+        padding-left: 0.625rem;
+        border-right: 0.4375rem solid #f17f3e;
+        border-bottom: 0.4375rem solid #f17f3e;
     }
     .accolade--do .accolade__heading-wrapper {
-        padding-right: 1rem;
+        padding-right: 0.625rem;
         align-self: center;
         text-align: right;
-        padding-right: 1rem;
-        border-left: .7rem solid #f17f3e;
-        border-bottom: .7rem solid #f17f3e;
+        padding-right: 0.625rem;
+        border-left: 0.4375rem solid #f17f3e;
+        border-bottom: 0.4375rem solid #f17f3e;
     }
     .accolade--done .accolade__heading-wrapper {
-        padding-left: 1rem;
-        border-right: .7rem solid #f17f3e;
-        border-top: .7rem solid #f17f3e;
+        padding-left: 0.625rem;
+        border-right: 0.4375rem solid #f17f3e;
+        border-top: 0.4375rem solid #f17f3e;
     }
     .accolade--you .accolade__heading-wrapper {
         text-align: center;
-        border-left: .7rem solid #f17f3e;
-        border-right: .7rem solid #f17f3e;
+        border-left: 0.4375rem solid #f17f3e;
+        border-right: 0.4375rem solid #f17f3e;
         border-bottom: none;
     }
 
     .accolade__heading {
-        font-size: 5.5rem;
+        font-size: 3.4375rem;
     }
 
     .accolade__content-wrapper {
         display: block;
         position: relative;
-        min-width: 18rem;
+        min-width: 11.25rem;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 0.625rem;
     }
 
     /* ==== CONTENT UNDER HEADER ==== */
     .accolade--am .accolade__content-wrapper {
         padding-right: 0;
-        border-left: .7rem solid #f17f3e;
+        border-left: 0.4375rem solid #f17f3e;
     }
     .accolade--do .accolade__content-wrapper {
         padding-left: 0;
-        border-right: .7rem solid #f17f3e;
+        border-right: 0.4375rem solid #f17f3e;
     }
     .accolade--done .accolade__content-wrapper {
-        border-left: .7rem solid #f17f3e;
-        border-bottom: .7rem solid #f17f3e;
+        border-left: 0.4375rem solid #f17f3e;
+        border-bottom: 0.4375rem solid #f17f3e;
     }
     .accolade--you .accolade__content-wrapper {
         padding-bottom: 0;
-        border-left: .7rem solid #f17f3e;
-        border-right: .7rem solid #f17f3e;
+        border-left: 0.4375rem solid #f17f3e;
+        border-right: 0.4375rem solid #f17f3e;
     }
 
     /* ==== CONTENT SPECIFIC ==== */
     .accolade__paragraph {
         color: inherit;
-        font-size: 1.8rem;
+        font-size: 1.125rem;
         line-height: 1.2;
     }
    
@@ -82,20 +81,10 @@
 /*==  Tiny Screen  ==*/
 @media only screen and (min-width: 400px) {
     .accolade {
-        max-width: 28rem;
+        max-width: 17.5rem;
     }
 
     .accolade__heading {
-        font-size: 7rem;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .accolade {
-        max-width: 44rem;
-    }
-
-    .accolade__heading {
-        font-size: 10rem;
+        font-size: 4.375rem;
     }
 }

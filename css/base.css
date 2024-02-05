@@ -1,6 +1,5 @@
 /*==  BASE STYLES  ==*/
 html {
-    font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
 }
