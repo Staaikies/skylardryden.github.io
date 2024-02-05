@@ -68,7 +68,7 @@
     }
 
     .heading--main {
-        font-size: 16rem;
+        font-size: 6.5rem;
     }
 
     .heading--second-main {
@@ -101,3 +101,9 @@
         font-size: 2.5rem;
     }
 }
+
+/*== Large Devices / Smaller ==*/
+@media only screen and (min-width: 992px) {} 
+
+/*== Large Devices / Biggest ==*/
+@media only screen and (min-width: 1200px) {} 

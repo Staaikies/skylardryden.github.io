@@ -88,3 +88,14 @@
         font-size: 4.375rem;
     }
 }
+
+/*== Landscape Tablets / Small Desktop Browser Window ==*/
+@media only screen and (min-width: 768px) {
+    .accolade {
+        max-width: 30rem;
+    }
+
+    .accolade__heading {
+        font-size: 5.5rem;
+    }
+}
