@@ -34,18 +34,10 @@
     /* ==== CARD COMPONENT ==== */
     .card-component {
         position: relative;
-        margin-bottom: 1.25rem;
-        padding: 0.875rem;
+        margin-bottom: 0.675rem;
+        padding: 1rem 0.875rem;
         background-color: #f3f3f3;
         border-radius: 0.375rem;
-    }
-
-    .card-component__label {
-        position: absolute;
-            top: 0.625rem;
-            right: 0.625rem;
-        color: #252525;
-        font-weight: 600;
     }
 
     .card-component__copy {
@@ -76,43 +68,25 @@
         border-radius: 100%;
     }
 
-    /* ==== CARD CONTROL PANEL ==== */
-    .card-component-controls {
-        width: 100%;
-        background-color: #303030;
-        padding: 0.625rem;
-        border-radius: 0.375rem;
-    }
-
-    .card-component-controls__description {
-        font-size: 0.75rem;
-        font-weight: 600;
-        margin-bottom: 0.625rem;
-    }
-
-    .card-component-controls__swatches-wrapper {
+    .card-component-controls__settings-wrapper {
         display: flex;
             justify-content: space-around;
         width: 100%;
     }
 
-    .card-component-controls__swatch {
-        width: 2.5rem;
-        height: 2.5rem; 
-        border: 1px solid #f3f3f3; 
-        border-radius: 100%;
+    .card-component-controls__button {
+        width: 100%;
+        margin: 0.4rem;
+        padding: 1rem;
+        background-color: #404040;
+        font-size: 1.25rem;
+        border: 0;
+        border-radius: 4px;
+        transition: .1s ease all;
+    }
+    .card-component-controls__button:hover {
+        cursor: pointer;
+        background-color: #505050;
     }
 
-    .card-component-controls__swatch--orange {
-        background-color: #f17f3e;
-    }
-    .card-component-controls__swatch--blue {
-        background-color: lightblue;
-    }
-    .card-component-controls__swatch--purple {
-        background-color: purple;
-    }
-    .card-component-controls__swatch--white {
-        background-color: #ddd;
-    }
 }

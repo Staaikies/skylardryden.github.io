@@ -7,9 +7,6 @@
         <title>skylardryden</title>
     </head>
     <body>
-        <div class="access-panel">
-            <button class="access-panel__button  access-panel__button--font-size">Tt</button>
-        </div>
         <header class="header  section  section--bordered">
             <span class="meta-info">
                 <span class="meta-info__item">Skylar Dryden</span> 
@@ -45,25 +42,19 @@
                     <div class="accolade__content-wrapper">
                         
                         <div class="card-component">
-                            <span class="card-component__label">Dynamic Card</span>
                             <div class="card-component__header">
                                 <img src="assets/placeholder_portfolio_image.jpg" class="card-component__image" />
                                 <h3 class="card-component__heading">Sir Catters</h3>
-                                
                             </div>
                             <div class="card-component__copy">
                                 <p class="card-component__subtext">This card is dynamic and responsive! Feel free to play around with the settings to test it.</p>
                             </div>
                         </div>
-                        <div class="card-component-controls">
-                            <p class="card-component-controls__description">Colour:</p>
-                            <div class="card-component-controls__swatches-wrapper">
-                                <div class="card-component-controls__swatch  card-component-controls__swatch--orange"></div>
-                                <div class="card-component-controls__swatch  card-component-controls__swatch--blue"></div>
-                                <div class="card-component-controls__swatch  card-component-controls__swatch--purple"></div>
-                                <div class="card-component-controls__swatch  card-component-controls__swatch--white"></div>
-                            </div>
+                        <div class="card-component-controls__settings-wrapper">
+                            <button class="card-component-controls__button">dark mode</button>
+                            <button class="card-component-controls__button">bigger text</button>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -105,18 +96,18 @@
                         <h2 class="accolade__heading">who are<br aria-hidden="true"> you?</h2>
                     </div>
                     <div class="accolade__content-wrapper">
-                        <form class="form">
+                        <form action="#" class="form" method="post">
                             <div class="form-field">
                                 <label class="form-label">name:</label>
-                                <input type="text" class="form-input"/>
+                                <input type="text" id="name" name="name" class="form-input" required/>
                             </div>
                             <div class="form-field">
                                 <label class="form-label">email:</label>
-                                <input type="email" class="form-input"/>
+                                <input type="email" id="email" name="email" class="form-input" required/>
                             </div>
                             <div class="form-field">
                                 <label class="form-label">message:</label>
-                                <textarea class="form-textarea"></textarea>
+                                <textarea id="message" name="message" class="form-textarea" required></textarea>
                             </div>
                             <div class="form-control">
                                 <button class="button button--primary form-button">contact me <span class="button__secret">chat soon</span></button>
