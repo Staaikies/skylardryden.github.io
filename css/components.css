@@ -6,6 +6,9 @@
         line-height: 0;
         padding: 1.125rem;
     }
+    .button:hover {
+        cursor: pointer;
+    }
 
     .button--primary {
         color: #f17f3e;
