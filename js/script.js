@@ -1,27 +1,40 @@
-// DONE CARD OPENING AND CLOSING LOGIC
+// ===== DONE CARD OPENING AND CLOSING LOGIC
 let headers = document.querySelectorAll(".done-card");
+
+const openDoneWork = () => {
+    this.classList.toggle('done-card--open');
+}
 
 for (var i = 0; i < headers.length; i++) {
     headers[i].addEventListener("click", openDoneWork);
 }
 
-function openDoneWork() {
-    this.classList.toggle('done-card--open');
-}
 
-
-// FORM LOGIC 
+// ===== FORM LOGIC 
 let form = document.querySelector(".form");
 let contactName;
 let contactEmail;
 let contactMessage;
 
-function validateEmail(email) {
+let contactHeader = document.querySelector(".js-contact-success");
+let contactForm = document.querySelector(".form");
+
+// Personal Privacy
+let sendPoint;
+const privacyFunc = () => {
+    let firstPrivRun = "c2t5bGFy";
+    let secPrivRun = "ZHJ5ZGVu";
+    let thirPrivRun = "Z21haWw=";
+
+    sendPoint = atob(firstPrivRun) + "." + atob(secPrivRun) + "@" + atob(thirPrivRun) + ".com";
+}
+
+const validateEmail = (email) => {
     let re = /\S+@\S+\.\S+/;
     return re.test(email);
 }
 
-function validateForm() {
+const validateForm = () => {
     contactName = document.forms[0]["name"].value;
     contactEmail = document.forms[0]["email"].value;
     contactMessage = document.forms[0]["message"].value;
@@ -43,20 +56,27 @@ function validateForm() {
     }
 }
 
+const contactSuccess = () => {
+    contactForm.style.display = "none";
+    contactHeader.innerHTML = "thank you for reaching out :)";
+}
+
 const sendEmail = () => {
     console.log(contactName);
     console.log(contactEmail);
     console.log(contactMessage);
 
+    privacyFunc();
+
     Email.send({
         SecureToken : "becd85e1-4c1a-45cb-9ae7-6c76fa8b3530",
-        To : "skylar.dryden@gmail.com",
-        From : "skylar.dryden@gmail.com",
+        To : sendPoint,
+        From : sendPoint,
         Subject : "A message from " + contactName,
         Body : contactMessage + " || Their email address is: " + contactEmail
         }).then(
             // Replace with nicer feedback for email send.
-        message => alert(message)
+            console.log("Success")
     );
 }
 
@@ -64,6 +84,7 @@ const handleContactSubmit = (e) => {
     e.preventDefault();
     validateForm();
     sendEmail();
+    contactSuccess();
 }
 
 form.addEventListener("submit", handleContactSubmit);
