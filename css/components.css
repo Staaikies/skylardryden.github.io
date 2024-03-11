@@ -41,6 +41,7 @@
     /* ==== TOGGLE BUTTON ==== */
     .toggle-button {
         display: block;
+            flex-grow: 1;
         position: relative;
         padding: 1.5rem 2.8rem 1.5rem 1rem;
         cursor: pointer;
@@ -54,6 +55,9 @@
         user-select: none;
         transition: .3s ease all;
     }
+    .toggle-button:first-of-type {
+        margin-bottom: .5rem;
+    }
 
     .toggle-button__checkbox {
         position: absolute;
@@ -65,10 +69,10 @@
 
     .toggle-button__checkmark {
         position: absolute;
-        top: .85rem;
-        right: .9rem;
-        height: 1.2rem;
-        width: 1.2rem;
+        top: .72rem;
+        right: 1rem;
+        height: 1.5rem;
+        width: 1.5rem;
         background-color: #252525;
         border: 1px solid #f17f3e;
         border-radius: 100%;
@@ -100,8 +104,8 @@
     }
 
     .toggle-button .toggle-button__checkmark:after {
-        left: .35rem;
-        top: .1rem;
+        left: .5rem;
+        top: .2rem;
         width: .25rem;
         height: .625rem;
         border: solid #252525;
@@ -118,11 +122,20 @@
         padding: 1rem 0.875rem;
         background-color: #f3f3f3;
         border-radius: 0.375rem;
+        transition: .2s ease all;
+    }
+    .card-component--light {
+        background-color: #f3f3f3;
+        border-bottom: 0.3rem solid #f17f3e;
+    }
+    .card-component--dark {
+        background-color: #353535;
+        border-bottom: 0.3rem solid #f3f3f3;
     }
 
     .card-component__copy {
         flex-grow: 1;
-        color: #252525;
+        font-size: 1rem;
     }
 
     .card-component__header {
@@ -133,13 +146,17 @@
 
     .card-component__heading {
         color: inherit;
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.125rem;
+        font-weight: 400;
         margin-left: 0.75rem;
     }
 
     .card-component__subtext {
+        display: block;
         color: inherit;
-        font-size: 1rem;
+        font-size: .75rem;
+        font-weight: 600;
     }
 
     .card-component__image {
@@ -151,6 +168,7 @@
     .card-component-controls__settings-wrapper {
         display: flex;
             justify-content: space-around;
+            flex-direction: column;
         width: 100%;
     }
 
@@ -159,4 +177,67 @@
         margin: 0 .5rem;
     }
 
+    /* Component Colour */
+    .card-component--light .card-component__copy,
+    .card-component--light .card-component__heading {
+        color: #252525;
+    }
+    .card-component--dark .card-component__copy,
+    .card-component--dark .card-component__heading {
+        color: #f3f3f3;
+    }
+    .card-component--light .card-component__image {
+        border: .125rem solid #f17f3e;
+    }
+    .card-component--dark .card-component__image {
+        border: .125rem solid #f3f3f3;
+    }
+
+    /* Component Font */
+    .card-component--large-font .card-component__heading {
+        font-size: 1.5rem;
+    }
+    .card-component--large-font .card-component__subtext {
+        font-size: 1rem;
+    }
+    .card-component--large-font .card-component__copy {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/*== Landscape Tablets / Small Desktop Browser Window ==*/
+@media only screen and (min-width: 768px) {
+    .card-component-controls__settings-wrapper {
+        flex-direction: row;
+    }
+
+    .card-component__image {
+        max-width: 5rem;
+    }
+    .card-component__heading {
+        font-size: 1.4rem;
+    }
+    .card-component__subtext {
+        font-size: .9rem;
+    }
+    .card-component__copy {
+        font-size: 1.2rem;
+    }
+
+    /* Component Font */
+    .card-component--large-font .card-component__heading {
+        font-size: 1.8rem;
+    }
+    .card-component--large-font .card-component__subtext {
+        font-size: 1.2rem;
+    }
+    .card-component--large-font .card-component__copy {
+        font-size: 1.4rem;
+    }
+
+    .toggle-button:first-of-type {
+        margin-bottom: 0;
+    }
 }

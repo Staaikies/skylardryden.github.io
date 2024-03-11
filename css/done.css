@@ -63,3 +63,10 @@
         margin-top: 0.625rem;
     }
 }
+
+/*== Landscape Tablets / Small Desktop Browser Window ==*/
+@media only screen and (min-width: 768px) {
+    .done-card__description {
+        font-size: 1rem;
+    }
+}
