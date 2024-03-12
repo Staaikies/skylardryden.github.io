@@ -77,7 +77,7 @@ const validateForm = () => {
 
 const contactSuccess = () => {
     contactForm.style.display = "none";
-    contactHeader.innerHTML = "thank you for reaching out :)";
+    contactHeader.innerHTML = "chat soon";
 }
 
 const sendEmail = () => {
