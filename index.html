@@ -3,16 +3,140 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <title>skylardryden</title>
     </head>
     <body>
-        <main class="landing">
-            <header class="header header--coming-soon">
-                <span class="heading-pretitle">You are staring at...</span>
-                <h1 class="heading heading--main">A work <br> in <br> progress</h1>
-                <span class="heading-subtitle">Thank you for your interest and check back soon.</span>
-            </header>
+        <header class="header  section  section--bordered">
+            <span class="meta-info">
+                <span class="meta-info__item">Skylar Dryden</span> 
+                <span class="meta-info__item meta-info__item--dot">•</span> 
+                <span class="meta-info__item">Front-end Developer</span> 
+                <span class="meta-info__item meta-info__item--dot  meta-info__item--dot-last">•</span> 
+                <span class="meta-info__item"><a href="https://www.linkedin.com/in/skylar-dryden-29b914182/" target="_blank" class="meta-info__link">LinkedIn</a></span> 
+            </span>
+            <div class="landing-banner">
+                <h1 class="heading heading--main">hello</h1>
+                <img src="assets/portfolio_image.jpeg" class="landing-banner__photo" />
+            </div>
+            <h2 class="heading heading--second-main">Welcome to my website</h2>
+        </header>
+        <main class="content">
+            <!-- WHO I AM -->
+            <section class="section  section--bordered-top  section--flex-centered">
+                <div class="accolade accolade--am">
+                    <div class="accolade__heading-wrapper">
+                        <h2 class="accolade__heading">who<br aria-hidden="true"> I<br aria-hidden="true"> am</h2>
+                    </div>
+                    <div class="accolade__content-wrapper">
+                        <p class="accolade__paragraph">I'm a Front-end Developer with 5+ years experience that specialises in component design and seamless UI flows. My passion lies in creating visually stunning interfaces and pushing the boundaries of user expectations.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- WHAT I DO -->
+            <section class="section  section--bordered-top  section--flex-centered">
+                <div class="accolade  accolade--do">
+                    <div class="accolade__heading-wrapper">
+                        <h2 class="accolade__heading">what<br aria-hidden="true"> I<br aria-hidden="true"> do</h2>
+                    </div>
+                    <div class="accolade__content-wrapper">
+                        
+                        <div class="card-component  card-component--light">
+                            <div class="card-component__header">
+                                <img src="assets/portfolio_image.jpeg" class="card-component__image" />
+                                <h3 class="card-component__heading">Skylar Dryden <span class="card-component__subtext">57k followers</span></h3>
+                            </div>
+                            <p class="card-component__copy">This card is dynamic and responsive! Feel free to play around with the settings to test it.</p>
+                        </div>
+                        <div class="card-component-controls__settings-wrapper">
+                            <label class="toggle-button  card-component-controls__toggle-button">
+                                Dark mode
+                                <input type="checkbox" class="toggle-button__checkbox  toggle-button__checkbox--colour" />
+                                <span class="toggle-button__checkmark"></span>
+                            </label>
+                            <label class="toggle-button  card-component-controls__toggle-button">
+                                Large text
+                                <input type="checkbox" class="toggle-button__checkbox  toggle-button__checkbox--font" />
+                                <span class="toggle-button__checkmark"></span>
+                            </label>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- WHAT I'VE DONE -->
+            <section class="section  section--bordered-top  section--flex-centered">
+                <div class="accolade accolade--done">
+                    <div class="accolade__heading-wrapper">
+                        <h2 class="accolade__heading">what<br aria-hidden="true"> I've<br aria-hidden="true"> done</h2>
+                    </div>
+                    <div class="accolade__content-wrapper">
+                        <div class="done-card">
+                            <div class="done-card__header-wrapper">
+                                <h3 class="done-card__header">Yuppiechef </h3>
+                                <i class="done-card__icon"></i>
+                            </div>
+                            <p class="done-card__description">Sole Front-end Developer reponsible for maintaining the Front-end of the website, warehouse and store POS intefaces.</p>
+                        </div>
+                        
+                        <div class="done-card">
+                            <div class="done-card__header-wrapper">
+                                <h3 class="done-card__header">Teach Me 2</h3>
+                                <i class="done-card__icon"></i>
+                            </div>
+                            <p class="done-card__description">Was instrumental in redesigning the website in React.js and was involved in the early mobile development of their sister company product, Coachbit.</p>
+                        </div>
+                        
+                        <div class="done-card">
+                            <div class="done-card__header-wrapper">
+                                <h3 class="done-card__header"><a href="https://github.com/Staaikies" target="_blank" class="done-card__header-link">GitHub Projects</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- WHO ARE YOU -->
+            <section class="section  section--bordered-top  section--flex-centered">
+                <div class="accolade accolade--you">
+                    <div class="accolade__heading-wrapper">
+                        <h2 class="accolade__heading  js-contact-success">who are<br aria-hidden="true"> you?</h2>
+                    </div>
+                    <div class="accolade__content-wrapper">
+                        <form action="#" class="form">
+                            <div class="form-field">
+                                <label class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-input" required/>
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-input" required/>
+                            </div>
+                            <div class="form-field">
+                                <label class="form-label">Message:</label>
+                                <textarea id="message" name="message" class="form-textarea" required></textarea>
+                            </div>
+                            <div class="form-control">
+                                <button class="button button--primary form-button">Contact me</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
+        
+        <!-- TODO: make all of these links functional -->
+        <!-- TODO: get icons for the links, yo -->
+        <footer class="footer">
+            <p class="footer__paragraph">Made with HTML, CSS, JavaScript and lots of coffee ☕</p>
+            <span class="meta-info">
+                <span class="meta-info__item"><a href="https://www.linkedin.com/in/skylar-dryden-29b914182/" target="_blank" class="meta-info__link">LinkedIn</a></span> 
+                <span class="meta-info__item meta-info__item--dot">•</span> 
+                <span class="meta-info__item"><a href="https://github.com/Staaikies" target="_blank" class="meta-info__link">Github Projects</a></span>
+            </span>
+        </footer>
+
+
+        <script src="js/script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
