@@ -149,7 +149,7 @@
 
     .card-component__image {
         max-width: 3.25rem;
-        height: fit-content;
+        height: auto;
         border-radius: 100%;
     }
 

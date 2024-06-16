@@ -11,7 +11,7 @@
     }
     .landing-banner__photo {
         width: 100%;
-        height: fit-content;
+        height: auto;
         max-width: 15rem;
         margin: 0.875rem 0;
         border: 0.4375rem solid #f17f3e;
