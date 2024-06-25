@@ -20,36 +20,44 @@
 
     .form-input {
         font-size: 1rem;
+        font-weight: 600;
         width: 100%;
-        min-height: 3rem;
-        padding: 1rem;
-        background-color: #303030;
+        min-height: 1rem;
+        padding: .6rem .8rem;
+        background-color: transparent;
         border: none;
-        border-radius: .2rem;
+        border-bottom: .2rem solid #f17f3e;
+        transition: .1s all ease;
     }
     .form-input:focus,
     .form-input:focus-visible {
         border: none;
+        border-bottom: .2rem solid #f17f3e;
         outline: none;
-        background-color: #505050;
-        transition: .3s all ease;
+    }
+    .form-input--large-font {
+        font-size: 1.4rem;
     }
 
     .form-textarea {
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
+        min-width: 100%;
+        max-width: 100%;
         min-height: 5rem;
+        max-height: 10rem;
         padding: 0.625rem;
-        background-color: #303030;
+        background-color: transparent;
         border: none;
+        border-bottom: .2rem solid #f17f3e;
         border-radius: 2px;
-        transition: .3s all ease;
+        transition: all .1s ease;
     }
     .form-textarea:focus,
     .form-textarea:focus-visible {
         border: none;
+        border-bottom: .2rem solid #f17f3e;
         outline: none;
-        background-color: #505050;
     }
 
     .form-button {

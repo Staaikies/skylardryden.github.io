@@ -5,12 +5,12 @@
         border: 3px solid #f17f3e;
         margin-bottom: 0.625rem;
         padding: 0.875rem 0.75rem;
+        transition: all .2s ease;
     }
     .done-card:hover {
         cursor: pointer;
         color: #252525;
         background-color: #f17f3e;
-        transition: .3s all ease;
     }
    .done-card:hover .done-card__header-wrapper .done-card__icon {
         border-left: 0.5625rem solid #252525;
@@ -26,6 +26,7 @@
     .done-card__header {
         color: inherit;
         font-size: 1.375rem;
+        transition: all .05s ease;
     }
 
     .done-card__header-link {
