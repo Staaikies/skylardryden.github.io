@@ -1,4 +1,4 @@
-import ProfilePhoto from '../assets/portfolio_image.jpeg';
+import ProfilePhoto from '../assets/portfolio_image.jpg';
 
 const Landing = () => {
   return (
@@ -14,7 +14,7 @@ const Landing = () => {
           <h1 className="heading heading--main">hello</h1>
           <img src={ProfilePhoto} className="landing-banner__photo" />
       </div>
-      <h2 className="heading heading--second-main">Welcome to my website</h2>
+      <h2 className="heading heading--second-main">Welcome to my portfolio</h2>
     </header>
   )
 }

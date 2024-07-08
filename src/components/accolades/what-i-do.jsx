@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { Button, ToggleButton } from '../buttons/buttons';
 
-import ProfilePhoto from '../../assets/portfolio_image.jpeg';
+import CardPhoto from '../../assets/card_photo.jpeg';
 import BlockedProfile from '../../assets/svgs/blocked.svg';
 
 
@@ -44,7 +44,7 @@ const WhatIDo = () => {
         <div className="accolade__content-wrapper">
         <div className={`card-component card-component--${darkMode ? "dark" : "light"} ${largeText ? "card-component--large-font" : ""}`}>
           <div className="card-component__header">
-            <img src={blocked ? BlockedProfile : ProfilePhoto} className="card-component__image" alt="Profile photo of Skylar Dryden" />
+            <img src={blocked ? BlockedProfile : CardPhoto} className="card-component__image" alt="Profile photo of Skylar Dryden" />
             {editMode
             ? 
             <input value={cardName} onChange={(e) => setCardName(e.target.value)} className="form-input form-input--large-font" style={{color: darkMode ? "white" : "#252525"}} maxLength={36} />
